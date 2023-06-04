@@ -1,15 +1,5 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "author": "",
-  "license": "ISC",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
-  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -19,5 +9,17 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.2.1",
     "nodemon": "^2.0.22"
-  }
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "engines": {
+    "node": ">=14.20.1"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "data.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
