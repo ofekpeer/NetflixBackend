@@ -21,26 +21,26 @@ seedRouter.get(
       await seedLists(listSeriesNames, 'Series');
       await seedLists(listMovieNames, 'Movies');
 
-      //const createdList = await List.insertMany(data.lists);
+      // const createdList = await List.insertMany(data.lists);
 
-      res.send({ createdList, createdContent, createdUsers });
+      res.send({  createdContent, createdUsers });
     } catch (err) {
-      console.log('fail update users content list');
+      console.log(err);
     }
   })
 );
 
 const seedLists = async (array, type) => {
   for (let i = 0; i < array.length; i++) {
-    const isSeries = type === 'movies' ? false : true;
+    const isSeries = type === 'Movies' ? false : true;
     let newList = await Content.aggregate([
       { $match: { isSeries: isSeries } },
       { $sample: { size: 8 } },
     ]);
-    console.log("---------"+ newList[i]);
+    console.log('---------' + newList[i]);
     newList = newList.map((i) => i._id);
-    console.log("=================================");
-    console.log("---------"+ newList[i]);
+    console.log('=================================');
+    console.log('---------' + newList[i]);
 
     const newListcontent = new List({
       title: array[i],
