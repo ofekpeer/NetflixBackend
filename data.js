@@ -16,7 +16,6 @@ export const listMovieNames = [
   'Documentariy Movies',
   'Classic Movies',
 ];
-
 export const listSeriesNames = [
   'Top Series',
   'Crime Series',
@@ -141,7 +140,7 @@ export const data = {
       imgTitle:
         'https://www.pngmart.com/files/12/Spider-Man-Into-The-Spider-Verse-Logo-PNG-Clipart.png',
       imgThumb:
-        'https://m.media-amazon.com/images/M/MV5BOTFlZTA4YjUtYzY3Zi00Mzc2LTllNzAtYjI2ZWNiMGZkZjE2XkEyXkFqcGdeQW1yb3NzZXI@._V1_QL75_UY281_CR86,0,500,281_.jpg',
+        'https://m.media-amazon.com/images/M/MV5BOTFlZTA4YjUtYzY3Zi00Mzc2LTllNzAtYjI2ZWNiMGZkZjE2XkEyXkFqcGdeQW1yb3NzZXI@.V1_QL75_UY281_CR86,0,500,281.jpg',
       imgVertical: 'https://cdn.marvel.com/content/2x/MilesPoster.jpg',
       trailer: 'https://youtu.be/g4Hbz2jLxvQ',
       movie: 'https://youtu.be/g4Hbz2jLxvQ',
@@ -162,7 +161,7 @@ export const data = {
       imgThumb:
         'https://occ-0-769-590.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZKJpdcSuvqwGBxBJNKVRze0JWHe9phJW6L1xaiqvLePPRKhRis-7FHr69URHZIYXqUVus0HIoz_3fLZPQr3VVqGGzRNlDoNkPwp.jpg?r=72d',
       imgVertical:
-        'https://m.media-amazon.com/images/M/MV5BOTlmNGE0ZGMtMzdkMC00MjQyLWI1ZjgtZTIxODAyNWJlZDFlXkEyXkFqcGdeQXVyNTQ4ODM2NjM@._V1_FMjpg_UX1000_.jpg',
+        'https://m.media-amazon.com/images/M/MV5BOTlmNGE0ZGMtMzdkMC00MjQyLWI1ZjgtZTIxODAyNWJlZDFlXkEyXkFqcGdeQXVyNTQ4ODM2NjM@.V1_FMjpg_UX1000.jpg',
       trailer: 'https://youtu.be/J2uW5ehHqjc',
       movie: 'https://youtu.be/J2uW5ehHqjc',
       duration: '2 hours 10 min',
@@ -181,7 +180,7 @@ export const data = {
       imgThumb:
         'https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/03/brave-movie.jpg',
       imgVertical:
-        'https://m.media-amazon.com/images/M/MV5BMzgwODk3ODA1NF5BMl5BanBnXkFtZTcwNjU3NjQ0Nw@@._V1_.jpg',
+        'https://m.media-amazon.com/images/M/MV5BMzgwODk3ODA1NF5BMl5BanBnXkFtZTcwNjU3NjQ0Nw@@.V1.jpg',
       movie: 'https://youtu.be/TEHWDA_6e3M',
       trailer: 'https://youtu.be/TEHWDA_6e3M',
       duration: '1 hour 40 min',
@@ -233,7 +232,7 @@ export const data = {
       img: 'https://cdn.kpbs.org/img/photos/2011/05/13/DF-07850.jpg',
       imgTitle: 'https://images.fanart.tv/fanart/priest-51ded5c2ef023.png',
       imgThumb:
-        'https://m.media-amazon.com/images/S/pv-target-images/401ca3e58039de9128b37dabf50ded0f1cd2b2c626e116f8d47d235abdf617b9._UR1920,1080_.jpg',
+        'https://m.media-amazon.com/images/S/pv-target-images/401ca3e58039de9128b37dabf50ded0f1cd2b2c626e116f8d47d235abdf617b9.UR1920,1080.jpg',
       imgVertical:
         'https://images.moviesanywhere.com/4605e276d787283db68b15bb094dafc5/6168c408-c8ef-4661-9829-3193386f2b59.jpg',
       trailer: 'https://youtu.be/-VNczhWD2ao',
@@ -248,10 +247,13 @@ export const data = {
       title: 'Avatar',
       description:
         "Avatar is a 2009 American epic science fiction film directed, written, produced, and co-edited by James Cameron, and stars Sam Worthington, Zoe Saldana, Stephen Lang, Michelle Rodriguez, and Sigourney Weaver. The film is set in the mid-22nd century, when humans are colonizing Pandora, a lush habitable moon of a gas giant in the Alpha Centauri star system, in order to mine the mineral unobtanium, a room-temperature superconductor. The expansion of the mining colony threatens the continued existence of a local tribe of Na'vi – a humanoid species indigenous to Pandora.",
-      img: 'https://images.fanart.tv/fanart/avatar-4fec1d99872da.jpg',
-      imgTitle: 'https://images.fanart.tv/fanart/avatar-51c893f5d905d.png',
-      imgThumb: 'https://images.fanart.tv/fanart/avatar-5129337b66cc0.jpg',
-      imgVertical: 'https://images.fanart.tv/fanart/avatar-5270be219592b.jpg',
+      img: 'https://variety.com/wp-content/uploads/2022/12/Main-thumb.jpg',
+      imgTitle:
+        'https://www.pngmart.com/files/15/Avatar-Logo-Transparent-PNG.png',
+      imgThumb:
+        'https://c4.wallpaperflare.com/wallpaper/810/33/235/movies-avatar-1680x1050-entertainment-movies-hd-art-wallpaper-preview.jpg',
+      imgVertical:
+        'https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@.V1.jpg',
       trailer: 'https://youtu.be/CM79GTEm2ps',
       movie: 'https://youtu.be/CM79GTEm2ps',
       duration: '2 hours 42 min',
@@ -282,13 +284,11 @@ export const data = {
       title: "Harry Potter and the Philosopher's Stone",
       description:
         "Harry Potter and the Philosopher's Stone is a 2001 fantasy film directed by Chris Columbus and distributed by Warner Bros. Pictures, based on J.K. Rowling's 1997 novel of the same name.",
-      img: 'https://images.fanart.tv/fanart/harry-potter-and-the-philosophers-stone-5abd8a14183c9.jpg',
+      img: 'https://wallpapercave.com/wp/wp4879828.jpg',
       imgTitle:
-        'https://images.fanart.tv/fanart/harry-potter-and-the-sorcerers-stone-5107731d5ddc9.png',
-      imgThumb:
-        'https://images.fanart.tv/fanart/harry-potter-and-the-sorcerers-stone-51b508340e14a.jpg',
-      imgVertical:
-        'https://images.fanart.tv/fanart/harry-potter-and-the-sorcerers-stone-522431b85fa87.jpg',
+        'https://i.ibb.co/qRs0ZsR/440-4406326-harry-potter-philosophers-stone-logo-hd-png-download-removebg-preview.png',
+      imgThumb: 'https://images8.alphacoders.com/113/1130049.jpg',
+      imgVertical: 'https://wallpapercave.com/wp/wp4879829.jpg',
       trailer: 'https://youtu.be/mNgwNXKBEW0',
       movie: 'https://youtu.be/mNgwNXKBEW0',
       duration: '2 hours 32 min',
@@ -302,13 +302,13 @@ export const data = {
     {
       title: 'Rick and Morty',
       description: `Rick and Morty is an American adult animated science fiction sitcom created by Justin Roiland and Dan Harmon for Cartoon Network's late-night programming block Adult Swim. The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but fretful grandson Morty Smith, who split their time between domestic family life and interdimensional adventures.`,
-      img: 'https://images.fanart.tv/fanart/rick-and-morty-584c0c323de5b.jpg',
+      img: 'https://m.media-amazon.com/images/I/81LBzgzf0iL.jpg',
       imgTitle:
-        'https://images.fanart.tv/fanart/rick-and-morty-57487d936bc9e.png',
+        'https://www.psdsuckers.com/wp-content/uploads/2022/07/rick-and-morty-logo-font-free-download.jpeg',
       imgThumb:
-        'https://images.fanart.tv/fanart/rick-and-morty-5a18b278e02da.jpg',
+        'https://myhotposters.com/cdn/shop/products/mL3562_67ea248e-034a-498e-8b38-e1eb1d5729cc_1024x1024.jpg?v=1571445730',
       imgVertical:
-        'https://images.fanart.tv/fanart/rick-and-morty-587b66b17166c.jpg',
+        'https://i.ebayimg.com/images/g/fJ4AAOSwxPVg0ykC/s-l1600.jpg',
       trailer: 'https://youtu.be/jerFRSQW9g8',
       movie: 'https://youtu.be/jerFRSQW9g8',
       duration: '22 min',
@@ -321,13 +321,13 @@ export const data = {
       title: `The Queen's Gambit`,
       description:
         "The Queen's Gambit is a 2020 American drama miniseries created by Scott Frank, based on the 1983 novel of the same name by Walter Tevis. It stars Anya Taylor-Joy as Beth Harmon, a chess prodigy, with Bill Camp, Thomas Brodie-Sangster, Moses Ingram, Harry Melling, Marielle Heller and others. The series revolves around the life of a young chess prodigy, orphan Beth Harmon, who struggles with addiction in a quest to become the greatest chess player in the world.",
-      img: 'https://images.fanart.tv/fanart/the-queens-gambit-5f9ce08e723cb.jpg',
+      img: 'https://www.whats-on-netflix.com/wp-content/uploads/2023/01/the-queens-gambit-2-netflix-jpg.webp',
       imgTitle:
-        'https://images.fanart.tv/fanart/the-queens-gambit-5f909918e4d78.png',
+        'https://assets.fanart.tv/fanart/tv/387115/hdtvlogo/the-queens-gambit-5f909918e4d78.png',
       imgThumb:
-        'https://images.fanart.tv/fanart/the-queens-gambit-5f9eeb8abe843.jpg',
+        'https://www.jesuithighschool.org/sites/main/files/imagecache/lightbox/main-images/sl_queens_gambit_bradenacosta24.jpg',
       imgVertical:
-        'https://images.fanart.tv/fanart/the-queens-gambit-60f32fddcb9b0.jpg',
+        'https://1.bp.blogspot.com/-DB4YRE95A9I/YZnN1oTXSDI/AAAAAAAAGW4/Zd2TqAPG51oGmEBgqkrZBqa---Fb0YGuQCNcBGAsYHQ/s1536/Gambito-de-Dama.jpg',
       trailer: 'https://youtu.be/oZn3qSgmLqI',
       movie: 'https://youtu.be/oZn3qSgmLqI',
       duration: '50 min',
@@ -340,11 +340,11 @@ export const data = {
       title: 'Lie to Me',
       description:
         'Lie to Me is an American crime drama television series that originally ran on the Fox network from January 21, 2009, to January 31, 2011. In the show, Dr. Cal Lightman and his colleagues in The Lightman Group accept assignments from third parties (commonly local and federal law enforcement), and assist in investigations, reaching the truth through applied psychology: interpreting microexpressions, through the Facial Action Coding System, and body language.',
-      img: 'https://images.fanart.tv/fanart/lie-to-me-53624b7e36b47.jpg',
-      imgTitle: 'https://images.fanart.tv/fanart/lie-to-me-50667f62b523d.png',
-      imgThumb: 'https://images.fanart.tv/fanart/lie-to-me-5c096765337e7.jpg',
+      img: 'https://lietome.com/wp-content/uploads/2021/06/ltm-video-poster.png',
+      imgTitle: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8LN7ZvrUW4ousK33dhmJLfWZWf8OXkKEXg&usqp=CAU',
+      imgThumb: 'https://wallpapers.com/images/hd/tim-roth-truth-hurts-lie-to-me-poster-diaaixtlq90fkg9p.jpg',
       imgVertical:
-        'https://images.fanart.tv/fanart/lie-to-me-53624b1cc10a5.jpg',
+        'https://resizing.flixster.com/iAgF4D7aOFPvdmvqOqy513AyAJY=/206x305/v2/https://flxt.tmsimg.com/assets/p7893284_b_v8_aa.jpg',
       trailer: 'https://youtu.be/Kq6PiXEG9Eg',
       movie: 'https://youtu.be/Kq6PiXEG9Eg',
       duration: '42 min',
@@ -358,13 +358,13 @@ export const data = {
       title: 'The Last Man on Earth',
       description:
         'The Last Man on Earth is an American post-apocalyptic comedy television series created by and starring Will Forte. The series premiered on Fox on March 1, 2015, and the fourth and final season concluded on March 8, 2018. The series follows the adventures of Phil Miller, an average man who becomes the last human being on Earth after a deadly virus spreads throughout the planet.',
-      img: 'https://images.fanart.tv/fanart/the-last-man-on-earth-57f134dc29c53.jpg',
+      img: 'https://flxt.tmsimg.com/assets/p10775022_b1t_h10_aa.jpg',
       imgTitle:
-        'https://images.fanart.tv/fanart/the-last-man-on-earth-56c5fc0826ac9.png',
+        'https://flxt.tmsimg.com/assets/p10774951_b_v8_aj.jpg',
       imgThumb:
-        'https://images.fanart.tv/fanart/the-last-man-on-earth-607a3704e6db2.jpg',
+        'https://m.media-amazon.com/images/I/A1W0xWl0tYL.RI.jpg',
       imgVertical:
-        'https://images.fanart.tv/fanart/the-last-man-on-earth-54f6387c0388d.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJDK5cTOpJiV66ISFzzdl_t3GW8hEY_tQJXA&usqp=CAU',
       trailer: 'https://youtu.be/NUZu331xTFs',
       movie: 'https://youtu.be/NUZu331xTFs',
       duration: '30 min',
@@ -376,13 +376,13 @@ export const data = {
     {
       title: 'Death Note',
       description: `Death Note is a Japanese manga series written by Tsugumi Ohba and illustrated by Takeshi Obata. The story follows Light Yagami, a high school student who discovers a supernatural notebook from a Shinigami named Ryuk that grants its user the ability to kill anyone whose name and face they know. The series centers around Light's attempts to create and rule a world cleansed of evil using the notebook, and the complex conflict between him, his opponents, and the Shinigami.`,
-      img: 'https://m.media-amazon.com/images/M/MV5BZDMxYzBhODAtZDRmZC00Njk1LTkzYjQtNTM5OGQ1YTA1YjUzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg',
+      img: 'https://m.media-amazon.com/images/M/MV5BZDMxYzBhODAtZDRmZC00Njk1LTkzYjQtNTM5OGQ1YTA1YjUzXkEyXkFqcGdeQXVyNjAwNDUxODI@.V1.jpg',
       imgTitle:
         'https://cdn.shopify.com/s/files/1/0259/7398/1235/collections/Death_Note_Logo.png?v=1587232436',
       imgThumb:
         'https://occ-0-3933-41.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWroW6c_lJwQ0ke2cFu_mgNM_01vUETqAt1cne4sjap77CYXvZMPTW2rP9-La6yEz-5bzHu_nSm-4X2Bao79lhocNgJA0l2lfI75BhWTaq1JOQVlGx04pGjd.jpg?r=dac',
       imgVertical:
-        'https://m.media-amazon.com/images/M/MV5BNjRiNmNjMmMtN2U2Yi00ODgxLTk3OTMtMmI1MTI1NjYyZTEzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg',
+        'https://m.media-amazon.com/images/M/MV5BNjRiNmNjMmMtN2U2Yi00ODgxLTk3OTMtMmI1MTI1NjYyZTEzXkEyXkFqcGdeQXVyNjAwNDUxODI@.V1_FMjpg_UX1000.jpg',
       trailer: 'https://youtu.be/NlJZ-YgAt-c',
       movie: 'https://youtu.be/NlJZ-YgAt-c',
       duration: '2 hours 37 min',
@@ -544,13 +544,13 @@ export const data = {
       title: 'Stranger Things',
       description:
         'Stranger Things is an American science fiction horror web television series created, written, and directed by the Duffer Brothers and released on Netflix. Set in the 1980s in the fictional town of Hawkins, Indiana, the season is about the disappearance of Will Byers and the ensuing search for him by his friends, family, and the local authorities.',
-      img: 'https://images.fanart.tv/fanart/stranger-things-5ccf1cdcc82b6.jpg',
+      img: 'https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png',
       imgTitle:
-        'https://images.fanart.tv/fanart/stranger-things-57a0cd6a71fc6.png',
+        'https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png',
       imgThumb:
-        'https://images.fanart.tv/fanart/stranger-things-5a62665fea007.jpg',
+        'https://m.media-amazon.com/images/M/MV5BMDRjYWI5NTMtZTYzZC00NTg4LWI3NjMtNmI3MTdhMWQ5MGJlXkEyXkFqcGdeQXVyNTg4MDc4Mg@@.V1_FMjpg_UX1000.jpg',
       imgVertical:
-        'https://images.fanart.tv/fanart/stranger-things-578c9b2cb3497.jpg',
+        'https://occ-0-299-38.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABV5lteI3eHet1nPBQKC_uEChESjqQfYpRwMWLR0wULt52odnxQtG69JNFDj9N4maZWJWDFZyi2sc1YzZ8mKE4Ajmt7Btva1CnWagGbYXVMp3t4OETM4LwiD70dHu-qWUbBAesQ.jpg?r=c68',
       trailer: 'https://youtu.be/b9EkMc79ZSU',
       movie: 'https://youtu.be/b9EkMc79ZSU',
       duration: '1 hour',
