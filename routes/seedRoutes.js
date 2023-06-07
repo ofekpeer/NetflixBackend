@@ -4,6 +4,7 @@ import Content from '../models/contentSchema.js';
 import expressAsyncHandler from 'express-async-handler';
 import { listMovieNames, listSeriesNames, genres, data } from '../data.js';
 import List from '../models/listSchema.js';
+import UserContentList from '../models/userContentListSchema.js';
 
 const seedRouter = express.Router();
 seedRouter.get(
@@ -11,11 +12,12 @@ seedRouter.get(
   expressAsyncHandler(async (req, res) => {
     try {
       await User.deleteMany({});
-      const createdUsers = await User.insertMany(data.users);
+      const createdUsers = await addUsers();
 
       await Content.deleteMany({});
       const createdContent = await Content.insertMany(data.content);
 
+      await addUserContent()
       await List.deleteMany({});
 
       await seedLists(listSeriesNames, 'Series');
@@ -23,12 +25,27 @@ seedRouter.get(
 
       // const createdList = await List.insertMany(data.lists);
 
-      res.send({  createdContent, createdUsers });
+      res.send({ createdContent, createdUsers });
     } catch (err) {
       console.log(err);
     }
   })
 );
+
+const addUserContent = async () => {
+  const randomContent = await Content.aggregate([{ $sample: { size: 1 } }]);
+  const users = await User.find();
+  const newUserContent = new UserContentList({
+    user: users[0],
+    content: randomContent,
+    isWatched: false
+  });
+  return await newUserContent.save();
+};
+
+const addUsers = async () => {
+  return await User.insertMany(data.users);
+};
 
 const seedLists = async (array, type) => {
   for (let i = 0; i < array.length; i++) {
@@ -37,10 +54,6 @@ const seedLists = async (array, type) => {
       { $match: { isSeries: isSeries } },
       { $sample: { size: 8 } },
     ]);
-    console.log('---------' + newList[i]);
-    newList = newList.map((i) => i._id);
-    console.log('=================================');
-    console.log('---------' + newList[i]);
 
     const newListcontent = new List({
       title: array[i],

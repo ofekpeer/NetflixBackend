@@ -29,7 +29,6 @@ listsRouter.get('/', isAuth, async (req, res) => {
     } else {
 
       list = await List.find().populate('contents'); // Retrives whole object
-      console.log(list);
     }
     res.status(200).json(list);
   } catch (err) {

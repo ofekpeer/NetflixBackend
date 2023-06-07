@@ -34,6 +34,9 @@ export const data = {
       password: bcrypt.hashSync('12345'),
       isAdmin: true,
       profilePicture: 'https://i.pravatar.cc/300',
+      myList: [
+        
+      ]
     },
   ],
   content: [
