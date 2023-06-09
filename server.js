@@ -21,9 +21,14 @@ app.use('/api/seed', seedRouter);
 app.use('/api/contents', contentRouter);
 app.use('/api/lists', listsRouter);
 app.use('/api/auth', authRouter);
-app.get('/*', (req, res) => {
-  res.redirect('https://netflix-frontend-qhno.onrender.com');
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "dist/index.html"), function (err) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
 });
+
 
 mongoose
   .connect(process.env.MONGO_PW)
