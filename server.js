@@ -21,7 +21,7 @@ app.use('/api/seed', seedRouter);
 app.use('/api/contents', contentRouter);
 app.use('/api/lists', listsRouter);
 app.use('/api/auth', authRouter);
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
   res.redirect('https://netflix-frontend-qhno.onrender.com');
 });
 
