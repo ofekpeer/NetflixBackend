@@ -22,7 +22,7 @@ app.use('/api/contents', contentRouter);
 app.use('/api/lists', listsRouter);
 app.use('/api/auth', authRouter);
 app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "dist/index.html"), function (err) {
+  res.sendFile(path.join(__dirname, "https://netflix-backend-wd1s.onrender.com"), function (err) {
     if (err) {
       res.status(500).send(err);
     }
