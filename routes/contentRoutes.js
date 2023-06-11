@@ -5,6 +5,40 @@ import { isAuth } from '../utils.js';
 
 const contentRouter = express.Router();
 
+
+contentRouter.get(
+  '/movies',
+  isAuth,
+  expressAsyncHandler(async (req, res) => {
+    let content;
+    try {
+      content = await Content.aggregate([
+        { $match: { isSeries: false } },
+      ]);
+      res.status(200).json(content);
+    } catch (error) {
+      res.status(500).json(error);
+    }
+  })
+);
+
+contentRouter.get(
+  '/series',
+  isAuth,
+  expressAsyncHandler(async (req, res) => {
+    let content;
+    try {
+      content = await Content.aggregate([
+        { $match: { isSeries: true } },
+      ]);
+      console.log('here');
+      res.status(200).json(content);
+    } catch (error) {
+      res.status(500).json(error);
+    }
+  })
+);
+
 contentRouter.get(
   '/',
   isAuth,
@@ -12,6 +46,7 @@ contentRouter.get(
     try {
       const data = await Content.find();
       res.status(200).json(data.reverse());
+      console.log('hey');
     } catch (err) {
       res.status(500).json(err);
     }
@@ -24,19 +59,20 @@ contentRouter.get(
   expressAsyncHandler(async (req, res) => {
     const query = req.query.query;
     const genre = req.query.genre;
+    console.log(req.query.query, req.query.genre);
     try {
       let options = {};
       if (query) options.title = { $regex: query, $options: 'i' };
       if (genre) options.genre = genre;
 
       const data = await Content.find(options);
+
       res.status(200).json(data.reverse());
     } catch (err) {
       res.status(500).json(err);
     }
   })
 );
-
 
 contentRouter.get(
   '/random',
@@ -63,19 +99,19 @@ contentRouter.get(
       res.status(500).json(error);
     }
   })
-  );
+);
 
-  contentRouter.get(
-    '/:_id',
-    isAuth,
-    expressAsyncHandler(async (req, res) => {
-      try {
-        const data = await Content.findById(req.params._id);
-        res.status(200).json(data);
-      } catch (err) {
-        res.status(500).json(err);
-      }
-    })
-  );
+contentRouter.get(
+  '/:_id',
+  isAuth,
+  expressAsyncHandler(async (req, res) => {
+    try {
+      const data = await Content.findById(req.params._id);
+      res.status(200).json(data);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  })
+);
 
-  export default contentRouter;
+export default contentRouter;
