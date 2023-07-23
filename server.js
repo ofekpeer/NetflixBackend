@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/seed', seedRouter);
+// app.use('/api/seed', seedRouter);
 app.use('/api/contents', contentRouter);
 app.use('/api/lists', listsRouter);
 app.use('/api/auth', authRouter);

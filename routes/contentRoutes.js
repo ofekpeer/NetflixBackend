@@ -5,7 +5,6 @@ import { isAuth } from '../utils.js';
 
 const contentRouter = express.Router();
 
-
 contentRouter.get(
   '/movies',
   isAuth,
@@ -101,6 +100,44 @@ contentRouter.get(
   })
 );
 
+contentRouter.post(
+  '/addtolist',
+  expressAsyncHandler(async (req, res) => {
+    const user = await User.findOne({
+      email: req.body.user.email,
+    });
+    const content = await Content.findOne({
+      title: req.body.content.title,
+    });
+    const existcontentList = await UserContentList.findOne({
+      user: user._id,
+    });
+    if (existcontentList) {
+      const contnentsList = await UserContentList.populate(existcontentList, {
+        path: 'content',
+      });
+      const exsitItem = contnentsList.content.find((i) => { 
+        return i.title == content.title
+      });
+      if (!exsitItem) {
+        try {
+          existcontentList.content.push(content);
+          let newlist = await existcontentList.save();
+          const contnents = await UserContentList.populate(newlist, {
+            path: 'content',
+          });
+          res.send(contnents);
+          return;
+        } catch (err) {
+          res.status(500).send(err);
+
+        }
+      }
+      res.status(400).send({ message: 'the item is alrety exist' });
+    }
+  })
+);
+
 contentRouter.get(
   '/:_id',
   isAuth,
@@ -113,5 +150,6 @@ contentRouter.get(
     }
   })
 );
+
 
 export default contentRouter;

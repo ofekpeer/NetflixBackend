@@ -3,6 +3,7 @@ import List from '../models/listSchema.js';
 import { isAuth } from '../utils.js';
 
 const listsRouter = express.Router();
+
 //some change
 listsRouter.get('/', isAuth, async (req, res) => {
   const typeQuery = req.query.type;
