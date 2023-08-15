@@ -11,9 +11,7 @@ contentRouter.get(
   expressAsyncHandler(async (req, res) => {
     let content;
     try {
-      content = await Content.aggregate([
-        { $match: { isSeries: false } },
-      ]);
+      content = await Content.aggregate([{ $match: { isSeries: false } }]);
       res.status(200).json(content);
     } catch (error) {
       res.status(500).json(error);
@@ -27,9 +25,7 @@ contentRouter.get(
   expressAsyncHandler(async (req, res) => {
     let content;
     try {
-      content = await Content.aggregate([
-        { $match: { isSeries: true } },
-      ]);
+      content = await Content.aggregate([{ $match: { isSeries: true } }]);
       console.log('here');
       res.status(200).json(content);
     } catch (error) {
@@ -116,8 +112,8 @@ contentRouter.post(
       const contnentsList = await UserContentList.populate(existcontentList, {
         path: 'content',
       });
-      const exsitItem = contnentsList.content.find((i) => { 
-        return i.title == content.title
+      const exsitItem = contnentsList.content.find((i) => {
+        return i.title == content.title;
       });
       if (!exsitItem) {
         try {
@@ -130,7 +126,6 @@ contentRouter.post(
           return;
         } catch (err) {
           res.status(500).send(err);
-
         }
       }
       res.status(400).send({ message: 'the item is alrety exist' });
@@ -150,6 +145,5 @@ contentRouter.get(
     }
   })
 );
-
 
 export default contentRouter;
